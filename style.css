@@ -1,0 +1,208 @@
+body {
+    background-color: black;
+    color: #ffd700;
+}
+h1, h2 {
+    text-shadow: 1px 1px 3px #fff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+section {
+    margin-bottom: 60px;
+}
+#fotoJean {
+    text-align: center;
+    margin: 20px 0;
+}
+#fotoJean img {
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    border: double 5px #ffd700;
+    margin-right: 200px;
+    margin-left: 55%;
+}
+#fotoJean p {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+}
+#fotobarbeiros {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#fotobarbeiros img {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    border: double 5px #ffd700;
+    box-shadow: 2px 2px 8px rgba(212, 175, 55, 0.5);
+    margin-top: 0;
+    cursor: pointer;
+}
+.barbeiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+#fotobarbeiros p {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+    text-align: center;
+    margin-top: 20px;
+}
+#fotoprodutos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+#fotoprodutos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: double 5px #ffd700;
+    box-shadow: 2px 2px 8px rgba(212, 175, 55, 0.5);
+    margin: 20px;
+    cursor: pointer;
+}
+#freezer h2 {
+    margin-top: 10%;
+}
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    max-height: 300px;;
+}
+#fotoprodutos p {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+    text-align: center;
+    margin-top: 0;
+}
+#fotofreezer {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+#fotofreezer img {
+    width: 300px;
+    height: 500px;
+    display: block;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+#aberto {
+    display: none;
+}
+.slot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+#slot1 { top: 100px; left: 40px; border-color: red;}
+#slot2 { top: 100px; left: 120px; border-color: red;}
+#slot3 { top: 100px; left: 200px; border-color: red;}
+
+.estrutura {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.estrutura p {
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+    color: #fff;
+}
+#encerramento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#encerramento img {
+    border: double 5px black;
+    box-shadow: 2px 2px 8px rgba(212, 175, 55, 0.5);
+}
+#encerramento a {
+    text-align: center;
+    text-decoration: solid;
+    display: block;
+}
+#encerramento p {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+    color: #fff;
+}
+.logo {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+}
+.whatsapp:hover {
+    background-color: #1ebd5a;
+}
+.telefone {
+    color: #ffd700;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+}
+.fachada {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: block;
+    margin: 20px auto 0 auto;
+
+}
+.localizacao {
+    font-size: 25px;
+    text-align: center;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+    border: solid 5px black;
+    box-shadow: 2px 2px 8px rgba(255, 215, 0, 0.7);
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    margin-top: 40px;
+    color: #fff;
+}
