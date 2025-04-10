@@ -21,6 +21,25 @@ h1 {
     font-family: 'Pacifico', sans-serif;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 768px) {
+    .bem, .vindos {
+        font-size: 120px; /* Menor para telas pequenas */
+    }
+    .bem {
+        top: -30px; /* Ajuste de posicionamento */
+        left: 20px; /* Ajuste de posicionamento */
+    }
+    .vindos {
+        top: 150px; /* Ajuste de posicionamento */
+        right: 100px; /* Ajuste de posicionamento */
+    }
+}
+
+@media (max-width: 480px) {
+    .bem, .vindos {
+        font-size: 90px; /* Ajuste ainda menor para dispositivos muito pequenos */
+    }
+}
 h2 {
     text-shadow: 1px 1px 3px #fff;
     text-align: center;
