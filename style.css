@@ -19,7 +19,7 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100dvh;
+    height: 100dvh;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
@@ -68,7 +68,7 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: auto;
+        height: 100vh;
         padding: 60px 20px;
     }
     h1 {
@@ -98,8 +98,8 @@ h1 {
 
     #fotoJean img {
         width: 100%;
-        max-width: 300px;
-        margin: 30px 0;
+        max-width: 350px;
+        margin: 40px 0;
     }
 }
 
@@ -111,7 +111,7 @@ h1 {
     #fotoJean img {
         width: 100%;
         max-width: 250px;
-        margin: 0 auto;
+        margin: 20px 0;
     }
 }
 
