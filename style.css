@@ -128,7 +128,7 @@ section {
     cursor: pointer;
 }
 #freezer h2 {
-    margin-top: 10%;
+    margin-top: 0;
 }
 .produto {
     display: flex;
@@ -207,9 +207,7 @@ section {
 }
 #encerramento {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 20px;
 }
