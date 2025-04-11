@@ -5,6 +5,22 @@ body {
 h1 {
     position: relative;
 }
+#p1 p {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+    text-align: center; 
+}
+.backgroundtijolo {
+    background-image: url("imagens/background\ tijolo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%); /* quanto menor, mais escuro */
+    height: 100vh;
+    border-radius: 20px;
+    margin: 0 auto 0 auto;
+}
 .bem {
     font-size: 210px;
     position: relative;
@@ -29,16 +45,31 @@ h1 {
     }
 
     .bem {
-        font-size: 120px; /* Ajusta o tamanho do título */
+        font-size: 100px;
+        top: -160px;
+        left: 0; /* Ajusta o tamanho do título */
+    }
+    .vindos {
+        font-size: 100px;
+        top: 80px;
+        right: 0;
     }
 
     #fotoJean img {
-        width: 80%; /* Ajusta o tamanho da imagem em telas pequenas */
+        width: 60%; /* Ajusta o tamanho da imagem em telas pequenas */
+        
     }
 }
 @media (max-width: 480px) {
     .bem {
-        font-size: 90px; /* Reduz ainda mais o tamanho do título */
+        font-size: 70px; /* Reduz ainda mais o tamanho do título */
+        top: -180px;
+        left: 0;
+    }
+    .vindos {
+        font-size: 70px;
+        top: 60px;
+        right: 0;
     }
 
     #fotoJean img {
