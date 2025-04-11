@@ -22,22 +22,27 @@ h1 {
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
 }
 @media (max-width: 768px) {
-    .bem, .vindos {
-        font-size: 120px; /* Menor para telas pequenas */
+    #fotoJean {
+        flex-direction: column; /* Empilha o título e a imagem */
+        text-align: center; /* Alinha o título ao centro */
+        gap: 10px; /* Ajusta o espaço entre o título e a imagem */
     }
+
     .bem {
-        top: -30px; /* Ajuste de posicionamento */
-        left: 20px; /* Ajuste de posicionamento */
+        font-size: 120px; /* Ajusta o tamanho do título */
     }
-    .vindos {
-        top: 150px; /* Ajuste de posicionamento */
-        right: 100px; /* Ajuste de posicionamento */
+
+    #fotoJean img {
+        width: 80%; /* Ajusta o tamanho da imagem em telas pequenas */
     }
 }
-
 @media (max-width: 480px) {
-    .bem, .vindos {
-        font-size: 90px; /* Ajuste ainda menor para dispositivos muito pequenos */
+    .bem {
+        font-size: 90px; /* Reduz ainda mais o tamanho do título */
+    }
+
+    #fotoJean img {
+        width: 90%; /* Ajusta a imagem para caber melhor */
     }
 }
 h2 {
