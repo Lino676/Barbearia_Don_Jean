@@ -2,6 +2,9 @@ body {
     background-color: black;
     color: #ffd700;
 }
+* {
+    box-sizing: border-box;
+}
 h1 {
     position: relative;
 }
@@ -16,10 +19,32 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(50%); /* quanto menor, mais escuro */
     height: 100vh;
+    position: relative;
+    overflow: hidden;
     border-radius: 20px;
     margin: 0 auto 0 auto;
+}
+.backgroundtijolo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* você pode ajustar o valor depois */
+    z-index: 0;
+}
+
+.backgroundtijolo > * {
+    position: relative;
+    z-index: 1;
+}
+.conteudoPrincipal {
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7);
+    text-align: center;
+}
+.bem, .vindos {
+    margin-bottom: 10px;
 }
 .bem {
     font-size: 210px;
@@ -45,9 +70,7 @@ h1 {
         justify-content: center;
         height: auto;
         padding: 60px 20px;
-        filter: brightness(40%);
     }
-
     h1 {
         display: flex;
         flex-direction: column;
@@ -57,15 +80,17 @@ h1 {
 
     .bem, .vindos {
         position: static !important;
-        font-size: 70px;
+        font-size: 140px;
         line-height: 1;
         margin: 0;
         padding: 0;
         font-family: 'Pacifico', sans-serif;
         text-align: center;
+        text-wrap: balance;
     }
 
     #fotoJean {
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -80,7 +105,7 @@ h1 {
 
 @media (max-width: 480px) {
     .bem, .vindos {
-        font-size: 50px;
+        font-size: 110px;
     }
 
     #fotoJean img {
@@ -93,7 +118,7 @@ h2 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 35px;
 }
 section {
     margin-bottom: 60px;
@@ -271,7 +296,7 @@ section {
 }
 .titulo2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     text-shadow: 1px 1px 3px #fff;
     margin: 0 auto 30px auto;
 }
@@ -292,7 +317,7 @@ section {
     font-weight: bold;
     box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.7);
     transition: background-color 0.3s;
-    font-size: 20px;
+    font-size: 30px;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
 }
 .whatsapp:hover {
